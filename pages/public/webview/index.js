@@ -6,16 +6,20 @@ Page({
     openid : ''
   },
   onShow: function(){
-    // if (!t.data.webShowed) {
-    //   wx.navigateTo({
-    //     url: '/pages/public/webview/index'
-    //   })
-    // } else {
+    if (!t.data.webShowed) {
+      t.data.webShowed = true;
+      wx.navigateTo({
+        url: '/pages/public/webview/index'
+      })
+    } 
+    // else {
     //   wx.navigateBack({
     //     data: 1
     //   });
     // }
-    t.data.webShowed = true;
+    var a = getCurrentPages();
+    $.alert(a);
+    // t.data.webShowed = true;
     this.getUserInfo();
   },
   getUserInfo: function () {

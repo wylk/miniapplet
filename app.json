@@ -1,8 +1,8 @@
 {
   "pages": [
-    "pages/public/index/index",
-    "pages/public/webview/index",
     
+    "pages/public/webview/index",
+    "pages/public/index/index",
     "pages/public/pay/index",
     "pages/public/order/index"
   ],
