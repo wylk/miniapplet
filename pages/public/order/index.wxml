@@ -1,0 +1,3 @@
+<view class="container">
+    <web-view src="https://mall.epaikj.com/wap/order.php?orderno={{orderNo}}"></web-view>  
+</view>

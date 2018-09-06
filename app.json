@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/public/index/index",
+    "pages/public/webview/index",
+    
+    "pages/public/pay/index",
+    "pages/public/order/index"
+  ],
+  "window": {
+    "backgroundColor": "#f00",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "white",
+    "backgroundTextStyle": "dark",
+    "navigationBarTitleText": "加载中..."
+  },
+  "debug": false
+}
