@@ -11,7 +11,7 @@ Page({
       wx.navigateTo({
         url: '/pages/public/webview/index'
       })
-    } 
+    }
     this.getUserInfo();
   },
   getUserInfo: function () {

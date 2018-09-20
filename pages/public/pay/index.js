@@ -21,11 +21,12 @@ Page({
         if(result.res == 0){
           $.pay(result.orderinfo, function (res) {
             if (res.errMsg == 'requestPayment:ok') {
+              $.post('/user.php?c=chrome&a=pash_message', { order_no: pageObj.data.orderNo}, function () { });
               wx.navigateTo({
                 url: "/pages/public/order/index?orderNo=" + pageObj.data.orderNo
               })
             } else {
-              $.alert("error alert");
+              // $.alert("error alert");
               $.alert(e.error);
               // wx.navigateBack({
               //   delta: 1
